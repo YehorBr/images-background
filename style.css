@@ -1,4 +1,4 @@
-.container{
+/* .container{
     display: flex;
     flex-wrap: wrap;
     width: 940px;
@@ -25,31 +25,31 @@
 
 .box:nth-child(1){
     background-color: royalblue;
-    background-image: url(./icons/photo_2023-05-26_19-30-01.png);
+    background-image: url(./icons/cat.png);
     background-repeat: no-repeat;
     background-position: center ;
 }
 
 .box:nth-child(2) {
-    /* background-color: rgb(255, 0, 64);
+    background-color: rgb(255, 0, 64);
     background-image: url(./icons/photo_2023-05-26_19-30-04.png);
     background-repeat: repeat-x;
-    background-position: center ; */
-    background: rgb(255, 0, 64) url(./icons/photo_2023-05-26_19-30-04.png) repeat-x center 40px;
+    background-position: center ;
+    background: rgb(255, 0, 64) url(./icons/bird.png) repeat-x center 40px;
 
 
 }
 
 .box:nth-child(3) {
    background-color: yellowgreen;
-   background-image: url(./icons/photo_2023-05-26_19-29-54.png);
+   background-image: url(./icons/dog.png);
    background-repeat: repeat-y;
    background-position: 50px 0;
 }
 
 .box:nth-child(4) {
     background-color: violet;
-    background-image: url(./icons/photo_2023-05-26_19-29-40.png);
+    background-image: url(./icons/turtle.png);
     background-repeat: no-repeat;
     background-position: center ;
     background-size: 150px;
@@ -58,4 +58,40 @@
 
 
 
+ */ 
 
+ /* .overlay{
+    max-width: 1200px;
+    height: 500px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image:linear-gradient( to top left, rgba(83, 50, 63, 0.5),rgba(110, 68, 85, 0.5), rgba(100, 0, 100, 0.5),rgb(255, 0, 106, 0.315), rgba(245, 6, 105, 0.295), rgba(3, 72, 175, 0.5), rgba(3, 72, 175, 0.5), rgba(0, 174, 255, 0.5)), url(./icons/fish.jpg) ;
+    background-position: center;
+    
+ } */
+
+ a{
+    text-decoration: none;
+ }
+
+ .button{
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 132, 255, 0.473);
+    border-radius: 5px;
+    color: rgb(223, 240, 255);
+ }
+
+ .button::after{
+    content: '';
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    background-image: url(./icons/cat.png); 
+    background-size: contain;
+    
+ }
+ 
