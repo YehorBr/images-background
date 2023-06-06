@@ -8,12 +8,70 @@
      box-sizing: inherit;
  }
 
+ ul,
+ p,
+ h1,
+ h2,
+ h3 {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+ }
+
+ ul {
+     list-style: none;
+ }
+
+ a{
+    text-decoration: none;
+ }
+
 .container{
     width: 1010px;
     padding-left: 10px;
     padding-right: 10px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.header .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 50px;
+    padding-bottom: 40px
+}
+
+.header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list{
+    display: flex;
+    margin-left: 465px;
+}
+
+.nav-list .list-item:not(:first-child){
+    margin-left: 114px;
+}
+
+.nav-link{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;    
+    text-align: center;
+    letter-spacing: 0.2px;
+    
+        
+    
+    color: #252B42;
+}
+
+.nav-link:hover{
+    color: #FA4A0C;
 }
 
 .hero{
@@ -25,10 +83,6 @@
 .hero{
     padding-top: 80px;
     padding-bottom: 162px;
-}
-
-ul{
-    list-style: none;
 }
 
 h1{
@@ -62,6 +116,8 @@ h1{
         text-align: center;
         letter-spacing: 0.2px;
         color: white;
+
+        margin-bottom: 78px;
 }
 
 .buttons-list{
@@ -73,34 +129,13 @@ h1{
     margin-left: 67px;
 }
 
-.button-1{
+
+.hero-button{
     padding: 16px 58px;
-    background-color: #FA4A0C;
-    color: #fff;
-
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 36px;
-    letter-spacing: 0.1px;
-
-    border: none;
-    box-shadow: 0px 10px 30px rgba(183, 50, 39, 0.2);
-    border-radius: 30px;
-
-}
-
-.button-2{
     background: linear-gradient(0deg, rgba(23, 16, 16, 0.6), rgba(23, 16, 16, 0.6)), url(./icons/Rectangle\ 48.jpg);
-    
-}
-
-.button-2{
-    padding: 16px 82px;
-    
+    background: transparent;
     color: #fff;
-    
-    
+
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -110,4 +145,21 @@ h1{
     border: solid 1px #fff;
     box-shadow: 0px 10px 30px rgba(183, 50, 39, 0.2);
     border-radius: 30px;
+
 }
+
+.button-2{
+    padding: 16px 82px;
+}
+
+.hero-button:hover,
+.hero-button:focus{
+    background-color: #FA4A0C;
+
+    border: none;
+}
+
+
+
+
+
